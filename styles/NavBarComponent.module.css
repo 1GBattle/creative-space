@@ -1,0 +1,21 @@
+.container{
+    background-color: var(--color-primary);
+    height: 6rem;
+    padding: .8rem 8rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    color: var(--text-color-primary);
+    font-size: 3.6rem;
+}
+
+.search__input {
+    border: none;
+    height: 3.2rem;
+    font-size: 2rem;
+    padding: .4rem;
+}

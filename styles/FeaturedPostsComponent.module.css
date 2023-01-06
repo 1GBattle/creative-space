@@ -1,0 +1,19 @@
+.container {
+    background-color: var(--primary-background-color);
+    height: 65rem;
+    padding: 2rem;
+    margin-top: 1.2rem;
+}
+
+.cards__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 4rem;
+    ;
+}
+
+.title {
+    color: var(--text-color-primary);
+    font-size: 4rem;
+    text-align: center;
+}

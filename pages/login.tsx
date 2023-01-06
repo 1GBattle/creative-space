@@ -3,7 +3,7 @@ import styles from "../styles/LoginPage.module.css"
 import Image from "next/image"
 import axios from "axios"
 import siteLogo from "../public/images/site__logo.png"
-import LoginSignUpForm from "../Components/LoginPage/LoginSignupFrom"
+import LoginSignUpForm from "../Components/LoginSignUpForm/LoginSignupFrom"
 import { NextPage } from "next"
 
 const Login: NextPage = () => {

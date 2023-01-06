@@ -41,7 +41,11 @@ a {
 
 .btn:hover{
     background-color: var(--color-primary-darker);
-    transform: scale(1.025);
+    transform: scale(1.05);
     transition: all ease-in-out 0.2s;
+}
+
+.btn:active {
+    transform: scale(1);
 }
 

@@ -1,7 +1,7 @@
 import React from "react"
-import styles from "../styles/LoginPage.module.css"
+import styles from "../styles/SignUpPage.module.css"
 import Image from "next/image"
-import axios from "axios"
+
 import siteLogo from "../public/images/site__logo.png"
 import LoginSignUpForm from "../Components/LoginPage/LoginSignupFrom"
 import { NextPage } from "next"
@@ -13,12 +13,10 @@ const Login: NextPage = () => {
 
       <h1 className={styles.page__heading}>Creative Space</h1>
     </div>
-    <div className={styles.form__container}>
-      <LoginSignUpForm formHeading={"Welcome back!"}
-                       formSubHeading={"Login to create posts and leave comments"}
-                       formLinkMsg={"New here? Click"}
-                       formType={"login"}
-      />
+    <div className={styles.form__container}><LoginSignUpForm formHeading={"Welcome to Creative Space!"}
+                                                             formSubHeading={"Login to create posts and leave comments"}
+                                                             formLinkMsg={"Already have an account? Click"}
+                                                             formType={"signup"} />
     </div>
   </div>
 }

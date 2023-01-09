@@ -1,5 +1,6 @@
 import { NextApiRequest, NextApiResponse } from "next"
-import { fbAuth } from "../../../firebase/firebase"
+import { fbAuth, fbFirestore } from "../../../firebase/firebase"
+import { setDoc, doc } from "@firebase/firestore"
 import { signInWithEmailAndPassword } from "firebase/auth"
 
 const Login = async (req: NextApiRequest, res: NextApiResponse) => {
@@ -15,6 +16,7 @@ const Login = async (req: NextApiRequest, res: NextApiResponse) => {
 
   try {
     const user = await signInWithEmailAndPassword(fbAuth, email, password).then((userCredential) => {
+      const user = userCredential.user
       return userCredential.user
     })
 

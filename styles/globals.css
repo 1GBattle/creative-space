@@ -1,56 +1,71 @@
 html,
 body {
-    padding: 0;
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    background-color: var(--primary-background-color);
-    font-size: 10px;
+	padding: 0;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+		Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	background-color: var(--primary-background-color);
+	font-size: 10px;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 }
 
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 :root {
-    --primary-background-color: #E4DFDA;
-    --primary-background-color-darker: #D0C9C4; ;
-    --color-primary: #D4B483;
-    --color-primary-darker: #C4A472;
-    --color-secondary: #C1666B;
-    --text-color-primary: #2D2D2D;
+	--primary-background-color: #e4dfda;
+	--primary-background-color-darker: #d0c9c4;
+	--color-primary: #d4b483;
+	--color-primary-darker: #c4a472;
+	--color-secondary: #c1666b;
+	--text-color-primary: #2d2d2d;
 }
 
 .box__shadow {
-    box-shadow: 30px 30px 60px rgba(0, 0, 0, 0.25);
+	box-shadow: 30px 30px 60px rgba(0, 0, 0, 0.25);
 }
 
-.btn{
-    background-color: var(--color-primary);
-    border: none;
-    font-size: 3.2rem;
-    padding: .8rem;
-    cursor: pointer;
-    border-radius: 21px;
+.btn {
+	background-color: var(--color-primary);
+	border: none;
+	font-size: 3.2rem;
+	padding: 0.8rem;
+	cursor: pointer;
+	border-radius: 21px;
 }
 
-.btn:hover{
-    background-color: var(--color-primary-darker);
-    transform: scale(1.05);
-    transition: all ease-in-out 0.2s;
+.btn:hover {
+	background-color: var(--color-primary-darker);
+	transform: scale(1.05);
+	transition: all ease-in-out 0.2s;
 }
 
 .btn:active {
-    transform: scale(1);
+	transform: scale(1);
 }
 
-h1{
-    padding: 0;
-    margin: 0;
+h1 {
+	padding: 0;
+	margin: 0;
 }
 
+.card {
+	width: 30rem;
+	height: 50rem;
+	overflow: hidden;
+	cursor: pointer;
+	border-radius: 3px;
+	transition: all 0.3s ease-in-out;
+	background-color: var(--color-primary);
+}
+
+.card:hover {
+	transform: scale(1.025);
+	transition: all 0.3s ease-in-out;
+	box-shadow: 22px 33px 10px rgba(0, 0, 0, 0.1);
+}

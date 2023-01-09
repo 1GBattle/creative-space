@@ -1,20 +1,20 @@
-.container {
-    width: 30rem;
-    height: 50rem;
-    overflow: hidden;
-    cursor: pointer;
-    border-radius: 3px;
-    transition: all 0.3s ease-in-out;
-    background-color: var(--color-primary);
+.card {
+	width: 30rem;
+	height: 50rem;
+	overflow: hidden;
+	cursor: pointer;
+	border-radius: 3px;
+	transition: all 0.3s ease-in-out;
+	background-color: var(--color-primary);
 }
 
-.container:hover {
-    transform: scale(1.025);
-    transition: all 0.3s ease-in-out;
-    box-shadow: 22px 33px 10px rgba(0, 0, 0, 0.1)
+.card:hover {
+	transform: scale(1.025);
+	transition: all 0.3s ease-in-out;
+	box-shadow: 22px 33px 10px rgba(0, 0, 0, 0.1);
 }
 
 .card__image {
-    width: 100%;
-    object-fit: cover;
+	width: 100%;
+	object-fit: cover;
 }

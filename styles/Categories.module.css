@@ -1,0 +1,40 @@
+.category__cards {
+	background-color: var(--primary-background-color);
+	height: 45rem;
+	margin-top: 3.2rem;
+	padding: 4rem;
+
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 6.4rem;
+}
+
+.heading__container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+}
+
+.categories__title {
+	font-size: 6rem;
+	text-align: center;
+	color: var(--text-color-primary);
+	margin-top: 2rem;
+}
+
+.dropDown__label {
+	font-size: 2rem;
+	margin-right: 2rem;
+}
+
+.dropDown {
+	margin-top: -1.2rem;
+	height: 2.4rem;
+	width: 10rem;
+}
+
+.dropDown > option:hover {
+	background-color: var(--primary-background-color);
+}

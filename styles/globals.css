@@ -19,6 +19,7 @@ a {
 
 :root {
 	--primary-background-color: #e4dfda;
+	--secondary-background-color: #cfcfcf;
 	--primary-background-color-darker: #d0c9c4;
 	--color-primary: #d4b483;
 	--color-primary-darker: #c4a472;
@@ -68,4 +69,22 @@ h1 {
 	transform: scale(1.025);
 	transition: all 0.3s ease-in-out;
 	box-shadow: 22px 33px 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid-4 {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 1.6rem;
+}
+
+.grid-5 {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 1.6rem;
+}
+
+.grid-6 {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	gap: 4rem;
 }

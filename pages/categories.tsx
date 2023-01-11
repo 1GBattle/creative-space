@@ -1,4 +1,5 @@
 import { NextPage } from 'next'
+import Link from 'next/link'
 import React, { useState, useEffect } from 'react'
 import NavBarComponent from '../Components/Nav/NavBarComponent'
 import styles from '../styles/Categories.module.css'
@@ -36,8 +37,6 @@ const Categories: NextPage<Props> = ({ categories }) => {
 
 	return (
 		<div className={styles.container}>
-			<NavBarComponent />
-
 			<div className={styles.heading__container}>
 				<h1 className={styles.categories__title}>Categories</h1>
 
@@ -53,13 +52,18 @@ const Categories: NextPage<Props> = ({ categories }) => {
 					</select>
 				</div>
 			</div>
-			<section className={styles.category__cards}>
+			<section className={`${styles.category__cards} grid-5`}>
 				{categories.map((category: CategoryModel) => (
-					<CategoryCard
-						key={Math.random() * 1000}
-						backgroundImgUrl={category.backgroundImgUrl}
-						categoryTitle={category.categoryTitle}
-					/>
+					<Link
+						key={category.categoryTitle}
+						href={`/category/${category.categoryTitle.toLowerCase()}`}
+						passHref
+					>
+						<CategoryCard
+							backgroundImgUrl={category.backgroundImgUrl}
+							categoryTitle={category.categoryTitle}
+						/>
+					</Link>
 				))}
 			</section>
 		</div>

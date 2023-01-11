@@ -1,0 +1,10 @@
+.container {
+	position: absolute;
+	margin-top: 10rem;
+}
+
+.category__name {
+	font-size: 3rem;
+	font-weight: 700;
+	text-align: center;
+}

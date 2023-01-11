@@ -3,13 +3,10 @@
 	height: 45rem;
 	margin-top: 3.2rem;
 	padding: 4rem;
-
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	gap: 6.4rem;
+	gap: 5rem;
 }
 
-.heading__container{
+.heading__container {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -21,7 +18,7 @@
 	font-size: 6rem;
 	text-align: center;
 	color: var(--text-color-primary);
-	margin-top: 2rem;
+	margin-top: 6rem;
 }
 
 .dropDown__label {
@@ -37,4 +34,12 @@
 
 .dropDown > option:hover {
 	background-color: var(--primary-background-color);
+}
+
+.utils__container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	gap: 2rem;
 }

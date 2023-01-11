@@ -16,7 +16,17 @@ const NavBarComponent: React.FunctionComponent = () => {
 	}
 	return (
 		<div className={styles.container}>
-			<h1 className={styles.title}>Creative Space</h1>
+			<div>
+				<Link href={'/'} className={styles.logo__container}>
+					<Image
+						src={'/images/site__logo.png'}
+						alt={'logo'}
+						width={50}
+						height={50}
+					/>
+					<h1 className={styles.title}>Creative Space</h1>
+				</Link>
+			</div>
 
 			<div className={styles.utils__container}>
 				<input
